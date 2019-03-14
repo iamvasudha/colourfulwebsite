@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Colourful Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="scrolling.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+    });
+  </script>
+</head>
+<body>
+
+  <!-- navbar starts -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle='collapse' data-target="#myNavbar">
+          <span class=icon-bar></span>
+          <span class=icon-bar></span>
+          <span class=icon-bar></span>
+        </button>
+        <a href="#" class="navbar-brand"><img src="img/logo.png"></a>
+      </div><!-- End of navbar header-->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </div><!-- End of navbar collapse -->
+    </div><!-- End of container -->
+  </nav><!-- End of nav -->
+
+  <!--Home starts -->
+  <div id="home">
+    <img src="img/desktop.png" alt="Animated banner image" class="banner">
+  </div>
+  <!-- Home Ends -->
+
+  <!--About starts -->
+  <div id="about" class="container-fluid text-center">
+    <h1>Welcome to my website</h1>
+    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book.</h3>
+        <br><br>
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in the 1960s
+          with the release of Letraset sheets containing Lorem Ipsum passages, and more
+          recently with desktop publishing software like Aldus PageMaker including
+          versions of Lorem Ipsum.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="img/code.png" alt="code image" id="code">
+      </div>
+    </div><!-- End of row-->
+    <br>
+    <h3><i>"Journey to Thousand miles starts with a single step!" -Unknown</i></h3>
+  </div><!-- End of container -->
+  <!-- About Ends -->
+
+  <img src="img/charts.png" class="banner" alt="colorful picture">
+
+  <div id="features" class="container-fluid text-center">
+    <h2>Learn about basic Web Technologies</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="img/html5.png" id="icon" alt="Feature Html">
+        <h3>HTML 5</h3>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/bootstrap.png" id="icon" alt="Feature Bootstrap">
+        <h3>Bootstrap</h3>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/css3.png" id="icon" alt="Feature CSS">
+        <h3>CSS 3</h3>
+      </div>
+      </div><!-- End of row -->
+      <br><br>
+      <h3><b>HTML5</b> is the latest evolution of the standard that defines HTML.
+        It is a new version of the language HTML, with new elements, attributes, and behaviors, and a
+        larger set of technologies that allows the building of more diverse and
+        powerful Web sites and applications. <b>Cascading Style Sheets</b> is a style
+        sheet language used for describing the presentation of a document
+        written in a markup language like HTML.<b>Bootstrap</b>Bootstrap is a
+        free and open-source front-end Web framework. It contains HTML and
+        CSS-based design templates for typography, forms, buttons, navigation
+        and other interface components, as well as optional JavaScript extensions.</h3>
+  </div><!-- End of container -->
+  <img src="img/people.png" class="banner" alt="People picture">
+
+  <!-- Portfolio starts -->
+
+  <div id="portfolio" class="container-fluid text-center">
+    <h2>Check out our portfolio</h2>
+    <br><br>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="img/icons/camera.png" id="icon" alt="Camera Image">
+      </div>
+      <div class="col-md-4">
+        <img src="img/icons/mic.png" id="icon" alt="Mic Image">
+      </div>
+      <div class="col-md-4">
+        <img src="img/icons/phone.png" id="icon" alt="Phone Image">
+      </div>
+      <div class="col-md-4 hidden-sm hidden-xs">
+        <img src="img/icons/calendar.png" id="icon" alt="Calendar Image">
+      </div>
+      <div class="col-md-4 hidden-sm hidden-xs">
+        <img src="img/icons/tv.png" id="icon" alt="TV Image">
+      </div>
+      <div class="col-md-4 hidden-sm hidden-xs">
+        <img src="img/icons/clock.png" id="icon" alt="Clock Image">
+      </div>
+    </div><!--End of row-->
+  </div><!--End of container-->
+  <!-- Portfolio Ends -->
+
+  <!--Connect starts -->
+  <img src="img/social.png" class="banner" alt="">
+
+  <footer id="connect" class="container-fluid text-center">
+    <div class="row">
+      <h2>Connect</h2>
+      <div class="social">
+        <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div><!-- End of row-->
+  </footer><!-- End of container-->
+  <!-- Connect Ends -->
+</body>
+</html>
